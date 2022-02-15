@@ -4,7 +4,7 @@
 
 > Todo List.
 
-![screenshot](https://github.com/miftah1991/ToDoList/img/img-1.png)
+![screenshot](https://github.com/miftah1991/ToDoList/blob/Milestone1-ListStructure/img/img-1.png)
 
 
 ## Built With
