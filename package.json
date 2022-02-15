@@ -20,11 +20,13 @@
   "homepage": "https://github.com/miftah1991/ToDoList#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
+    "css-loader": "^6.6.0",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.25.4",
     "hint": "^6.1.9",
     "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
