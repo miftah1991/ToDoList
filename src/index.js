@@ -5,7 +5,7 @@ const tasks = [
   {
     description: 'Listing item 1',
     completed: false,
-    index: 0,
+    index: 1,
   },
   {
     description: 'Completed todo list item',
@@ -28,9 +28,11 @@ const tasks = [
     index: 4,
   },
 ];
+
 const tasksDisplay = () => {
   const inputItem = document.querySelector('#input-item');
-  tasks.reverse().forEach((task) => {
+  tasks.sort((a, b) => parseFloat(a.index) - parseFloat(b.index));
+  tasks.forEach((task) => {
     const html = `
       <li class="task-${task.index}">
         <div class="task">
