@@ -10,6 +10,27 @@ html {
   font-size: 62.5%;
 }
 
+.task {
+  width: 70%;
+}
+
+.task-desc {
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  padding: 0.2rem 0.5rem;
+  width: 90%;
+}
+
+.hidden {
+  display: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
 .nav {
   background-color: #222;
   height: 9vh;
