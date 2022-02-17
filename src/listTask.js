@@ -16,6 +16,7 @@ const displayAllTasks = () => {
       <i class="fas fa-trash trash-${task.id}"></i>
     </li>
     `;
+
       const inputItem = document.getElementById('input-item');
       inputItem.insertAdjacentHTML('afterend', htmlTask);
       const threeDotIcon = document.querySelector(`.three-dot-icon-${task.id}`);
@@ -34,6 +35,7 @@ const displayAllTasks = () => {
           span.classList.add('hidden');
         });
       });
+
       const trashIcon = document.querySelector(`.trash-${task.id}`);
       trashIcon.addEventListener('click', () => {
         Tasks.removeItem(task.id);
@@ -41,11 +43,16 @@ const displayAllTasks = () => {
         targetTodo.remove();
       });
       const checkIcon = document.querySelector(`.check-${task.id}`);
+      const targetTodo = document.querySelector(`#input-${task.id}`);
       checkIcon.addEventListener('change', () => {
-        const targetTodo = document.querySelector(`#input-${task.id}`);
         targetTodo.classList.toggle('completed');
         Tasks.updateCompleted(task.id);
       });
+      if (task.completed === true) {
+        const targetTodo = document.querySelector(`#input-${task.id}`);
+        targetTodo.classList.toggle('completed');
+        checkIcon.checked = true;
+      }
     });
   }
 };

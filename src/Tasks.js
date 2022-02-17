@@ -45,6 +45,17 @@ class Tasks {
       });
       this.storage(this.tasks);
     }
+
+    static deleteCompletedTask = () => {
+      document.querySelectorAll('.completed').forEach((item) => {
+        item.parentNode.parentNode.remove();
+      });
+
+      this.tasks = this.tasks.filter((task) => !task.completed);
+      this.storage(this.tasks);
+      this.updateIndex();
+      window.location.reload();
+    };
 }
 
 export default Tasks;
