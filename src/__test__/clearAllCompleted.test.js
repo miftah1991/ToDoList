@@ -5,8 +5,8 @@ import { changeStatus } from '../__mocks__/changeStatus.js';
 describe('Test "Clear all completed" function', () => {
   test('Add a completed task and delete it', () => {
     const input = 'Task 100';
-    addTask(input); 
-    changeStatus(input); 
+    addTask(input);
+    changeStatus(input);
     const result = clearAllCompleted();
     expect(result).toHaveLength(0);
   });
@@ -14,9 +14,9 @@ describe('Test "Clear all completed" function', () => {
   test('Add two tasks and delete only the completed task', () => {
     const input = 'Task 1';
     const input2 = 'Task 2';
-    addTask(input); 
+    addTask(input);
     addTask(input2);
-    changeStatus(input); 
+    changeStatus(input);
     const result = clearAllCompleted();
     expect(result).toHaveLength(1);
   });
