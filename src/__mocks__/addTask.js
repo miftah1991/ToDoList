@@ -12,7 +12,7 @@ const addTask = (input) => {
 
   const id = Tasks.tasks.length + 1;
 
-  const newTask = new Tasks(id,input);
+  const newTask = new Tasks(id, input);
   Tasks.tasks.push(newTask);
 };
 
