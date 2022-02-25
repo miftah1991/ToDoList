@@ -2,7 +2,8 @@
 
 # Event Page
 
-> Todo List.
+> <b>Todo List. <br>
+This is simple To-Do App for managing the daily tasks and to keep track on tasks during the day.</b>
 
 ![screenshot](https://github.com/miftah1991/ToDoList/blob/Milestone1-ListStructure/img/img-1.png)
 
@@ -28,6 +29,12 @@ To get a local copy follow these simple steps.
 npm install
 ```
 4.- To see the home page open index.html with your browser.
+
+5. to run the test please run bellow command
+
+```
+npm run test --verbose
+```
 
 
 ## Live Demo
